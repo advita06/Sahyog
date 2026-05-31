@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Dashboard — SAHYOG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🌿 SAHYOG</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore NGOs</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="#" onclick="logout()" class="nav-btn">Logout</a>
+    </div>
+  </nav>
+
+  <!-- Dashboard Header -->
+  <section class="dashboard-header">
+    <h1>NGO Dashboard</h1>
+    <p>Manage your NGO profile and collaboration requests</p>
+  </section>
+
+  <!-- Dashboard Content -->
+  <section class="dashboard-section">
+
+    <!-- Create NGO Profile -->
+    <div class="dashboard-card">
+      <h2>📝 Create NGO Profile</h2>
+      <div class="form-group">
+        <label>NGO Name</label>
+        <input type="text" id="ngo-name" placeholder="Enter NGO name">
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea id="ngo-description" placeholder="Describe your NGO" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Category</label>
+        <select id="ngo-category">
+          <option value="environment">Environment</option>
+          <option value="children">Children</option>
+          <option value="education">Education</option>
+          <option value="health">Health</option>
+          <option value="animals">Animals</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Location</label>
+        <input type="text" id="ngo-location" placeholder="Enter location">
+      </div>
+      <div class="form-group">
+        <label>Contact Email</label>
+        <input type="email" id="ngo-contact" placeholder="Enter contact email">
+      </div>
+      <div class="form-group">
+        <label>Mission</label>
+        <input type="text" id="ngo-mission" placeholder="Enter your mission">
+      </div>
+      <button class="btn-full" onclick="createNGO()">Create NGO Profile</button>
+      <p id="ngo-message" class="message"></p>
+    </div>
+
+    <!-- Collaboration Requests -->
+    <div class="dashboard-card">
+      <h2>🤝 Collaboration Requests</h2>
+      <div id="requests-list">
+        <p class="no-requests">No collaboration requests yet</p>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

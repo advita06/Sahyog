@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAHYOG— Connecting NGOs, Changing Lives</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"> SAHYOG</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore NGOs</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html" class="nav-btn">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">🌍 Making a Difference Together</div>
+      <h1>Connecting NGOs,<br><span class="highlight">Changing Lives</span></h1>
+      <p>Discover thousands of NGOs, find volunteer opportunities, and collaborate to create a better world for everyone.</p>
+      <div class="hero-buttons">
+        <a href="explore.html" class="btn-primary">Explore NGOs</a>
+        <a href="signup.html" class="btn-secondary">Join as NGO</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-card">
+        <div class="hero-card-icon">🤝</div>
+        <div>
+          <strong>500+ NGOs</strong>
+          <p>Connected worldwide</p>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon">👥</div>
+        <div>
+          <strong>10,000+ Volunteers</strong>
+          <p>Making a difference</p>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon">🌱</div>
+        <div>
+          <strong>1000+ Campaigns</strong>
+          <p>Launched successfully</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="stat-item">
+      <h2>500+</h2>
+      <p>NGOs Registered</p>
+    </div>
+    <div class="stat-item">
+      <h2>10,000+</h2>
+      <p>Volunteers Joined</p>
+    </div>
+    <div class="stat-item">
+      <h2>50+</h2>
+      <p>Cities Covered</p>
+    </div>
+    <div class="stat-item">
+      <h2>1000+</h2>
+      <p>Campaigns Launched</p>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="section-header">
+      <span class="section-badge">Simple Process</span>
+      <h2>How It Works</h2>
+      <p>Get started in just 3 simple steps</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <div class="step-icon">📝</div>
+        <h3>Create Account</h3>
+        <p>Sign up as a volunteer or register your NGO on our platform for free.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <div class="step-icon">🔍</div>
+        <h3>Discover NGOs</h3>
+        <p>Browse and search through hundreds of verified NGOs across multiple categories.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">03</div>
+        <div class="step-icon">🤝</div>
+        <h3>Collaborate</h3>
+        <p>Connect, volunteer, and collaborate with NGOs to make a real impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <div class="section-header">
+      <span class="section-badge">Explore</span>
+      <h2>Browse by Category</h2>
+      <p>Find NGOs that match your passion</p>
+    </div>
+    <div class="category-grid">
+      <div class="category-card" onclick="window.location.href='explore.html'">
+        <span class="cat-icon">🌱</span>
+        <h3>Environment</h3>
+        <p>Plantation & Cleanliness</p>
+      </div>
+      <div class="category-card" onclick="window.location.href='explore.html'">
+        <span class="cat-icon">👶</span>
+        <h3>Children</h3>
+        <p>Education & Welfare</p>
+      </div>
+      <div class="category-card" onclick="window.location.href='explore.html'">
+        <span class="cat-icon">📚</span>
+        <h3>Education</h3>
+        <p>Learning & Development</p>
+      </div>
+      <div class="category-card" onclick="window.location.href='explore.html'">
+        <span class="cat-icon">❤️</span>
+        <h3>Health</h3>
+        <p>Medical & Wellness</p>
+      </div>
+      <div class="category-card" onclick="window.location.href='explore.html'">
+        <span class="cat-icon">🐾</span>
+        <h3>Animals</h3>
+        <p>Rescue & Protection</p>
+      </div>
+      <div class="category-card" onclick="window.location.href='explore.html'">
+        <span class="cat-icon">🤲</span>
+        <h3>Other</h3>
+        <p>Various Causes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured NGOs -->
+  <section class="featured">
+    <div class="section-header">
+      <span class="section-badge">Featured</span>
+      <h2>Featured NGOs</h2>
+      <p>Meet some of our amazing organizations</p>
+    </div>
+    <div class="ngo-grid" id="ngo-grid"></div>
+    <div style="text-align:center; margin-top:40px">
+      <a href="explore.html" class="btn-primary">View All NGOs →</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="section-header">
+      <span class="section-badge">Testimonials</span>
+      <h2>What People Say</h2>
+      <p>Hear from our community members</p>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>"This platform helped us connect with 3 other NGOs and together we planted 500 trees in Pune!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">🧑</div>
+          <div>
+            <strong>Rahul Sharma</strong>
+            <span>Green Earth NGO</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>"I found the perfect volunteering opportunity within minutes. The search feature is amazing!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">👩</div>
+          <div>
+            <strong>Priya Patel</strong>
+            <span>Volunteer</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>"Our NGO grew 10x after joining this platform. The collaboration features are outstanding!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">👨</div>
+          <div>
+            <strong>Amit Kumar</strong>
+            <span>Children First NGO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Campaigns -->
+  <section class="campaigns">
+    <div class="section-header">
+      <span class="section-badge">Latest</span>
+      <h2>Latest Campaigns</h2>
+      <p>Join these active campaigns today</p>
+    </div>
+    <div class="campaign-grid">
+      <div class="campaign-card">
+        <div class="campaign-tag">Environment</div>
+        <h3>Plant 1 Million Trees</h3>
+        <p>Join us in our mission to plant trees across Maharashtra and fight climate change.</p>
+        <div class="campaign-footer">
+          <span>🌱 2,500 volunteers</span>
+          <a href="explore.html" class="btn-small">Join Now</a>
+        </div>
+      </div>
+      <div class="campaign-card">
+        <div class="campaign-tag">Education</div>
+        <h3>Free Coaching for Rural Kids</h3>
+        <p>Help us provide quality education to underprivileged children in rural areas.</p>
+        <div class="campaign-footer">
+          <span>📚 1,200 volunteers</span>
+          <a href="explore.html" class="btn-small">Join Now</a>
+        </div>
+      </div>
+      <div class="campaign-card">
+        <div class="campaign-tag">Health</div>
+        <h3>Free Medical Camp</h3>
+        <p>We are organizing free medical checkups for people in underprivileged communities.</p>
+        <div class="campaign-footer">
+          <span>❤️ 800 volunteers</span>
+          <a href="explore.html" class="btn-small">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2>Ready to Make a Difference?</h2>
+    <p>Join thousands of volunteers and NGOs already on our platform</p>
+    <div class="hero-buttons">
+      <a href="signup.html" class="btn-primary">Get Started Free</a>
+      <a href="explore.html" class="btn-secondary">Explore NGOs</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo">🌿 NGO Platform</div>
+        <p>Connecting NGOs and volunteers to create a better world.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore NGOs</a>
+        <a href="signup.html">Register NGO</a>
+        <a href="login.html">Login</a>
+      </div>
+      <div class="footer-links">
+        <h4>Categories</h4>
+        <a href="explore.html">Environment</a>
+        <a href="explore.html">Children</a>
+        <a href="explore.html">Education</a>
+        <a href="explore.html">Health</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SAHYOG. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

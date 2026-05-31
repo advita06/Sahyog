@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore NGOs — SAHYOG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">SAHYOG</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore NGOs</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </div>
+  </nav>
+
+  <!-- Search and Filter -->
+  <section class="search-section">
+    <h2>Explore NGOs</h2>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search NGOs by name...">
+      <select id="filter">
+        <option value="">All Categories</option>
+        <option value="environment">Environment</option>
+        <option value="children">Children</option>
+        <option value="education">Education</option>
+        <option value="health">Health</option>
+        <option value="animals">Animals</option>
+        <option value="other">Other</option>
+      </select>
+      <button class="btn-search" onclick="filterNGOs()">Search</button>
+    </div>
+  </section>
+
+  <!-- NGO Cards -->
+  <section class="explore-section">
+    <div class="ngo-grid" id="ngo-grid">
+      <!-- NGOs load here -->
+    </div>
+  </section>
+
+  <script src="js/explore.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
