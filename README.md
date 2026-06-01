@@ -1,4 +1,7 @@
 # Sahyog — NGO Collaboration Platform
+
+Live demo:https://sahyog-20f9.onrender.com
+
 Sahyog means collaboration in Hindi. That one word captures everything this platform stands for.
 In India alone, there are thousands of NGOs doing incredible work — planting trees, educating children, feeding the hungry, rescuing animals. But most of them work alone. They do not know who else is working on the same cause in the same city. Volunteers do not know where to go. Resources get wasted. Impact stays small.
 Sahyog was built to fix that.
